@@ -322,18 +322,18 @@
         <div class="cta-band glass">
           <div class="eyebrow">Download</div>
           <h2>Hol dir Veil</h2>
-          <p class="lead" style="margin: 0 auto 26px;">Für Windows 10 & 11. Entpacken, <b>Veil.exe</b> starten — fertig.</p>
+          <p class="lead" style="margin: 0 auto 26px;">Für Windows 10 & 11 und macOS. Entpacken, <b>Veil</b> starten — fertig.</p>
           <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-            <a class="btn" href="https://github.com/welias123/veil-website/releases/latest/download/Veil-Windows.zip">
+            <a id="dl-win" class="btn" href="https://github.com/welias123/veil-app/releases/latest/download/Veil-Setup.exe">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.6v6.9H3V5.5zm0 13 7 .9v-6.9H3v6zm8 1L21 21v-8.5H11v7zm0-15v7.5h10V3l-10 1.5z"/></svg>
               Windows
             </a>
-            <span class="btn btn-ghost" style="opacity:0.6; cursor:default;" title="macOS-Version kommt bald">
+            <a id="dl-mac" class="btn btn-ghost" href="https://github.com/welias123/veil-app/releases/latest/download/Veil-macOS.dmg">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1.1 2.6-2.2.8-1.2 1.2-2.4 1.2-2.5-.1 0-2.3-.9-2.3-3.5zM14.2 6.3c.6-.7 1-1.7.9-2.8-.9 0-2 .6-2.6 1.4-.6.6-1 1.7-.9 2.7 1 0 2-.6 2.6-1.3z"/></svg>
-              macOS — bald
-            </span>
+              macOS
+            </a>
           </div>
-          <p class="lead" style="margin: 16px auto 0; font-size: 13px;">Immer die neueste Version — der Download aktualisiert sich automatisch.</p>
+          <p class="lead" style="margin: 16px auto 0; font-size: 13px;">Windows aktualisiert sich automatisch im Browser. <span id="mac-note" style="display:none;">Unter macOS lädst du neue Updates jedes Mal manuell hier herunter.</span></p>
         </div>
       </div>
     </section>
@@ -344,5 +344,22 @@
         <div>© 2026 Veil · entwickelt von Elias · privat by design</div>
       </div>
     </footer>
+    <script>
+      // Highlight the download button matching the visitor's OS and, on macOS,
+      // reveal the manual-update note.
+      (function () {
+        var p = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
+        var ua = navigator.userAgent || "";
+        var isMac = /Mac/i.test(p) || /Mac OS X/i.test(ua);
+        var win = document.getElementById("dl-win");
+        var mac = document.getElementById("dl-mac");
+        if (isMac && win && mac) {
+          win.classList.add("btn-ghost");
+          mac.classList.remove("btn-ghost");
+          var note = document.getElementById("mac-note");
+          if (note) note.style.display = "inline";
+        }
+      })();
+    </script>
   </body>
 </html>
