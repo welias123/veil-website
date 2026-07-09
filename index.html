@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veil — Mach dich unsichtbar</title>
+    <title>Veil: Mach dich unsichtbar</title>
     <meta name="description" content="Veil ist ein privater Desktop-Browser: eingebautes Tor, nativer Werbe- & Tracker-Blocker, eigene Suche. Kein Konto, keine Tracker, open source." />
     <link rel="icon" href="icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +57,7 @@
       }
       .kicker::before { content: ""; width: 26px; height: 2px; background: var(--accent); display: inline-block; }
 
-      /* Buttons — hard brutalist offset shadow, sharp corners */
+      /* Buttons: hard brutalist offset shadow, sharp corners */
       .btn {
         display: inline-flex; align-items: center; gap: 10px;
         padding: 15px 26px; font-weight: 700; font-size: 15px; letter-spacing: 0.01em;
@@ -91,7 +91,7 @@
       .nav-links a.lnk { font-family: var(--mono); font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
       .nav-links a.lnk:hover { color: var(--ink); }
 
-      /* Hero — left aligned, poster type */
+      /* Hero: left aligned, poster type */
       .hero { padding: 90px 0 40px; position: relative; }
       .hero .tag { margin-bottom: 26px; }
       .hero h1 {
@@ -108,7 +108,7 @@
       .hero .cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
       .hero .micro { font-family: var(--mono); font-size: 12px; color: #5c5c68; margin-top: 22px; letter-spacing: 0.04em; }
 
-      /* Surveillance card — bold framed panel */
+      /* Surveillance card: bold framed panel */
       .watch {
         margin-top: 66px; border: 2px solid var(--line); background: var(--panel);
         display: grid; grid-template-columns: 1fr 1fr;
@@ -128,7 +128,7 @@
       .ticker { border-top: 2px solid var(--line); border-bottom: 2px solid var(--line); background: var(--accent); color: #0a0a0f; overflow: hidden; margin-top: 70px; }
       .ticker .track { display: inline-flex; white-space: nowrap; animation: scroll 26s linear infinite; }
       .ticker span { font-family: var(--display); font-size: 30px; letter-spacing: 0.04em; text-transform: uppercase; padding: 14px 26px; }
-      .ticker span::after { content: "✦"; margin-left: 52px; opacity: 0.5; }
+      .ticker span::after { content: "/"; margin-left: 52px; opacity: 0.5; }
       @keyframes scroll { to { transform: translateX(-50%); } }
 
       /* Sections */
@@ -195,14 +195,14 @@
           <a class="lnk" href="#features">Funktionen</a>
           <a class="lnk" href="#allin">Alles drin</a>
           <a class="lnk" href="https://github.com/welias123/veil-app" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="#download">Download ↓</a>
+          <a class="btn" href="#download">Download</a>
         </div>
       </div>
     </nav>
 
     <header class="hero" id="top">
       <div class="wrap">
-        <span class="kicker tag">Veil — Privater Desktop-Browser</span>
+        <span class="kicker tag">Veil: Privater Desktop-Browser</span>
         <h1>
           Mach dich<br />
           <span class="hl">unsichtbar</span><span class="out">.</span>
@@ -216,25 +216,25 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
             Jetzt herunterladen
           </a>
-          <a class="btn btn-ghost" href="#features">Was Veil kann →</a>
+          <a class="btn btn-ghost" href="#features">Was Veil kann</a>
         </div>
         <p class="micro">// KOSTENLOS · OPEN SOURCE · WINDOWS 10/11 & MACOS</p>
 
         <!-- Surveillance vs Veil panel -->
         <div class="watch">
           <div class="left">
-            <div class="hd"><span>Ohne Veil sehen sie</span><span class="mono">●&nbsp;REC</span></div>
-            <div class="row"><span class="x">✕</span> deinen Standort &amp; deine IP</div>
-            <div class="row"><span class="x">✕</span> jede besuchte Seite</div>
-            <div class="row"><span class="x">✕</span> 1.275 Tracker pro Sitzung</div>
-            <div class="row"><span class="x">✕</span> deinen digitalen Fingerabdruck</div>
+            <div class="hd"><span>Ohne Veil sehen sie</span><span class="mono">[ REC ]</span></div>
+            <div class="row"><span class="x">×</span> deinen Standort &amp; deine IP</div>
+            <div class="row"><span class="x">×</span> jede besuchte Seite</div>
+            <div class="row"><span class="x">×</span> 1.275 Tracker pro Sitzung</div>
+            <div class="row"><span class="x">×</span> deinen digitalen Fingerabdruck</div>
           </div>
           <div class="right">
             <div class="hd"><span>Mit Veil</span><span class="mono" style="color:var(--accent)">SHIELDS AN</span></div>
             <div class="big"><span>1.275</span></div>
             <div class="sub">Tracker &amp; Werbung blockiert · 68,5 MB gespart</div>
-            <div class="row" style="margin-top:16px"><span class="k">✓</span> Tor verschleiert deine IP</div>
-            <div class="row"><span class="k">✓</span> .onion öffnet automatisch</div>
+            <div class="row" style="margin-top:16px"><span class="k">+</span> Tor verschleiert deine IP</div>
+            <div class="row"><span class="k">+</span> .onion öffnet automatisch</div>
           </div>
         </div>
       </div>
@@ -254,38 +254,38 @@
             <span class="kicker">Warum Veil</span>
             <h2>Privatsphäre,<br />die einfach mitläuft</h2>
           </div>
-          <p class="lead2">Kein Setup, keine Erweiterungen. Öffnen und sicher surfen — alles ist schon drin.</p>
+          <p class="lead2">Kein Setup, keine Erweiterungen. Öffnen und sicher surfen, alles ist schon drin.</p>
         </div>
 
         <div class="feats">
           <div class="feat">
             <div class="no">01</div>
-            <div><h3>Veil Shields</h3><p>Blockiert Werbung & Tracker nativ — mit Live-Zähler, wie viel Bandbreite und Zeit du gespart hast.</p></div>
+            <div><h3>Veil Shields</h3><p>Blockiert Werbung & Tracker nativ, mit Live-Zähler, wie viel Bandbreite und Zeit du gespart hast.</p></div>
             <div class="tagm">[ Blocker ]</div>
           </div>
           <div class="feat">
             <div class="no">02</div>
-            <div><h3>Tor integriert</h3><p>.onion-Seiten öffnen sich von selbst — Veil lädt & verbindet Tor automatisch. Kein zweiter Browser nötig.</p></div>
+            <div><h3>Tor integriert</h3><p>.onion-Seiten öffnen sich von selbst, Veil lädt & verbindet Tor automatisch. Kein zweiter Browser nötig.</p></div>
             <div class="tagm">[ Anonym ]</div>
           </div>
           <div class="feat">
             <div class="no">03</div>
-            <div><h3>Veil AI</h3><p>Kostenlose KI-Antworten direkt in der Suche — ohne Konto, ohne API-Key, für jeden out of the box.</p></div>
+            <div><h3>Veil AI</h3><p>Kostenlose KI-Antworten direkt in der Suche, ohne Konto, ohne API-Key, für jeden out of the box.</p></div>
             <div class="tagm">[ KI ]</div>
           </div>
           <div class="feat">
             <div class="no">04</div>
-            <div><h3>Eigene Suche</h3><p>Werbefreie Veil-Suche mit Web, Videos & Nachrichten — keine Weiterleitung zu Dritten, keine Profile.</p></div>
+            <div><h3>Eigene Suche</h3><p>Werbefreie Veil-Suche mit Web, Videos & Nachrichten, keine Weiterleitung zu Dritten, keine Profile.</p></div>
             <div class="tagm">[ Suche ]</div>
           </div>
           <div class="feat">
             <div class="no">05</div>
-            <div><h3>Fingerprint-Schutz</h3><p>HTTPS erzwingen, Cookie-Banner blocken, Anti-Fingerprinting — alles optional und mit einem Klick dabei.</p></div>
+            <div><h3>Fingerprint-Schutz</h3><p>HTTPS erzwingen, Cookie-Banner blocken, Anti-Fingerprinting, alles optional und mit einem Klick dabei.</p></div>
             <div class="tagm">[ Schutz ]</div>
           </div>
           <div class="feat">
             <div class="no">06</div>
-            <div><h3>Open Source</h3><p>Der komplette Quellcode liegt offen auf GitHub. Nichts zu verbergen — außer dir.</p></div>
+            <div><h3>Open Source</h3><p>Der komplette Quellcode liegt offen auf GitHub. Nichts zu verbergen, außer dir.</p></div>
             <div class="tagm">[ Offen ]</div>
           </div>
         </div>
@@ -297,18 +297,18 @@
         <span class="kicker">Alles drin</span>
         <h2>Was Veil kann</h2>
         <div class="allin">
-          <div><span class="p">▸</span> Tabs: Drag, Anpinnen, Wiederherstellen</div>
-          <div><span class="p">▸</span> Omnibox mit Verlaufs-Vorschlägen</div>
-          <div><span class="p">▸</span> Lesezeichen-Leiste (Strg+D)</div>
-          <div><span class="p">▸</span> Verlauf durchsuchen (Strg+H)</div>
-          <div><span class="p">▸</span> Downloads mit Speed & Stopp</div>
-          <div><span class="p">▸</span> Werbe- & Tracker-Blocker + Statistik</div>
-          <div><span class="p">▸</span> Tor für .onion — automatisch</div>
-          <div><span class="p">▸</span> Onion-Modus mit lila Rahmen</div>
-          <div><span class="p">▸</span> Veil AI — Fragen direkt beantwortet</div>
-          <div><span class="p">▸</span> YouTube ohne Werbung, Vollbild</div>
-          <div><span class="p">▸</span> Hell/Dunkel-Theme, Lila-Akzent</div>
-          <div><span class="p">▸</span> Automatische Updates im Browser</div>
+          <div><span class="p">></span> Tabs: Drag, Anpinnen, Wiederherstellen</div>
+          <div><span class="p">></span> Omnibox mit Verlaufs-Vorschlägen</div>
+          <div><span class="p">></span> Lesezeichen-Leiste (Strg+D)</div>
+          <div><span class="p">></span> Verlauf durchsuchen (Strg+H)</div>
+          <div><span class="p">></span> Downloads mit Speed & Stopp</div>
+          <div><span class="p">></span> Werbe- & Tracker-Blocker + Statistik</div>
+          <div><span class="p">></span> Tor für .onion, automatisch</div>
+          <div><span class="p">></span> Onion-Modus mit lila Rahmen</div>
+          <div><span class="p">></span> Veil AI, Fragen direkt beantwortet</div>
+          <div><span class="p">></span> YouTube ohne Werbung, Vollbild</div>
+          <div><span class="p">></span> Hell/Dunkel-Theme, Lila-Akzent</div>
+          <div><span class="p">></span> Automatische Updates im Browser</div>
         </div>
       </div>
     </section>
@@ -320,7 +320,7 @@
           <div class="who">
             <span class="kicker">Entwickler</span>
             <h3>Elias</h3>
-            <p>Veil wird von einer Person gebaut — mit Fokus auf Privatsphäre & Design. Fragen, Feedback oder Ideen? Komm auf Discord.</p>
+            <p>Veil wird von einer Person gebaut, mit Fokus auf Privatsphäre & Design. Fragen, Feedback oder Ideen? Komm auf Discord.</p>
           </div>
           <a class="btn discord" href="https://discord.com/users/thomasmueller33_45378" target="_blank" rel="noopener">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a18 18 0 0 1 4.3 1.3 16.6 16.6 0 0 0-14.9 0A18 18 0 0 1 8.9 3.4L8.6 3a19.8 19.8 0 0 0-4.9 1.4C.6 9 0 13.6.3 18.1A19.9 19.9 0 0 0 6.4 21l.5-.7a13 13 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l.5.7a19.9 19.9 0 0 0 6.1-3c.4-5.3-.6-9.8-3.4-13.6zM8.4 15.3c-1.2 0-2.1-1.1-2.1-2.4S7.2 10.5 8.4 10.5s2.1 1.1 2.1 2.4-1 2.4-2.1 2.4zm7.2 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4z"/></svg>
@@ -335,7 +335,7 @@
         <div class="cta-band">
           <span class="kicker" style="justify-content:center">Download</span>
           <h2>Hol dir Veil</h2>
-          <p class="lead2">Für Windows 10 & 11 und macOS. Einfach <b style="color:var(--ink)">herunterladen und installieren</b> — fertig.</p>
+          <p class="lead2">Für Windows 10 & 11 und macOS. Einfach <b style="color:var(--ink)">herunterladen und installieren</b>, fertig.</p>
           <div class="dlrow">
             <a id="dl-win" class="btn" href="https://github.com/welias123/veil-app/releases/latest/download/Veil-Setup.exe">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.6v6.9H3V5.5zm0 13 7 .9v-6.9H3v6zm8 1L21 21v-8.5H11v7zm0-15v7.5h10V3l-10 1.5z"/></svg>
